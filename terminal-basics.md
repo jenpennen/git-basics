@@ -13,7 +13,7 @@ lists the contents of foldername directory
 ## ls [foldername]/[subfolder]
 lists the contents of subfolder in foldername
 ```
-ex. > ls Desktop/Basics
+> ls Desktop/Basics
 ```
 
 ## open .
