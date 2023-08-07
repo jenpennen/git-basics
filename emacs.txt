@@ -1,0 +1,70 @@
+Intro to emacs
+
+Help commands
+*	C-h	help-command: first character in lots of useful help commands
+*	C-h t	help-with-tutorial: command to run the tutorial
+ 	C-h i	information: describes most of the emacs commands in man style pages
+ 	C-h k	describe-key: tells you what a particular key stroke does
+*	C-h a	command-apropos: prompts for a string and then searches for all emacs commands that contains that string
+ 	ESC ?	also does command-apropos
+*	C-h ?	help-for-help: describes how to use the help facilities
+
+File Reading and Writing Commands
+
+*	C-x C-f	find-file: first prompts for a filename and then loads that file into a editor buffer of the same name
+*	C-x C-s	save-buffer: saves the buffer into the associated filename
+ 	C-x C-w	write-named-file: prompts for a new filename and writes the buffer into it
+
+Cursor/Screen Movement Commands
+*	C-a	move cursor to (at) beginning-of-line
+ 	C-e	move cursor to end-of-line
+*	C-f	move cursor forward one character
+*	C-b	move cursor backward one character
+*	C-n	move cursor to next line
+*	C-p	move cursor to previous line
+ 	C-v	scroll file forward by one screenful
+ 	ESC v	scroll file backward by one screenful
+*	ESC <	go to beginning-of-buffer
+*	ESC >	go to end-of-buffer
+ 	ESC f	move cursor forward one word
+ 	ESC b	move cursor backward one word
+
+Copy and Delete Commands
+ 	C-d	delete-char: delete character under cursor
+ 	ESC d	delete-word: delete from cursor to end of word immediately ahead of the cursor
+*	C-k	kill-line: delete the rest of the current line
+*	C-@	set-mark-command: mark is used to indicate the beginning of an area of text to be yanked
+*	C-w	kill-region: delete the area of text between the mark and the current cursor position
+*	C-y	yank: insert at current cursor location whatever was most recently deleted
+ 	ESC w	copy-region-as-kill: copy area between mark and cursor into kill-buffer so that it can be yanked into someplace else
+
+Search Commands
+*	C-s	isearch-forward: prompts for text string and 
+  then searches from the current cursor position forwards in the buffer
+ 	C-r	isearch-backward: like isearch-forward, 
+  but searches from the current cursor position to end of buffer for text string
+ 	ESC %	query-replace: prompts for a search string and 
+  a string with which to replace the search string
+
+Window and Buffer Commands
+
+ 	C-x 0	zero-window: deletes current window
+ 	C-x 2	double-window: splits current window into two parts, 
+  allowing you to edit at two different locations in the same file 
+  or permitting you to view two different files at the same time
+ 	C-x b	switch-to-buffer: display a different buffer on the screen
+ 	C-x o	other-window: move the cursor to the other window (assuming that you have two windows/buffers open at once)
+*	C-x C-b	list-buffers: lists those buffers currently loaded into emacs
+
+Exiting Emacs, Fixing Mistakes and Other Important Stuff
+
+*	C-x C-c	save-buffers-kill-emacs: when you are finished editing, to save the edited but unsaved buffers 
+    and to return you to the UNIX prompt
+*	C-g	keyboard-quit: if while typing a command you make a mistake and want to stop, 
+    this aborts a command in progress
+ 	C-u	universal-argument: if you want to do a command several times, 
+    type this command followed by a number (for the number of times) followed by the command you wish repeated
+*	C-x u	undo: undoes the last command typed, in case you made a mistake
+*	ESC x	execute-extended-command: prompts for the name of an emacs command; 
+            allows you to execute a command if you know roughly what it is called 
+            but cannot remember the key strokes for it
