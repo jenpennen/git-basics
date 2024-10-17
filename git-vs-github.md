@@ -10,4 +10,4 @@ Github is a web service that hosts Git repositories in the cloud and makes it ea
 
 ## Why did I write this on a separate file?
 
-Trust me, I've written about this on paper and people have always bypassed it. It's important to know the difference between the two!
+Trust me, I've written about this on paper and people have always bypassed it. It's important to know the difference between the two! Github is a tool built for Git users!
