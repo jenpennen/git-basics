@@ -26,5 +26,5 @@ Examples:
 Personally, this makes the most sense, since you make a commit with the work you've already modified.
 
 _BUT_
-Git uses the same imperative style and it shows when yoy do merges with commit messages: `Merge pull request`
+Git uses the same imperative style and it shows when you do merges with commit messages: `Merge pull request`
 It tells someone what applying that commit will do, so it reads something like: `"If I apply this commit, it will [make xyz do something]"` But again, using present tense, imperative isn't mandatory. Just keep the messages consistent with whatever style you prefer or what the org/project you work for prefers.
