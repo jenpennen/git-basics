@@ -28,7 +28,7 @@ gives information on the current status of a git repository and its contents.
 
 used to create a git repository. Before doing anything git-related, we must initialize a repo first. This is only done ONCE per project. Initialize the repo in the top-level folder containing your project.
 
-Creates an empty git repository, or a .gt directory with subdirectories for objects, refs/heads, refs/tags, and template files files. They're hidden so you don't mess around with it. You can use the following command to see the .git directory
+Creates an empty git repository, or a .git directory with subdirectories for objects, refs/heads, refs/tags, and template files files. They're hidden so you don't mess around with it. You can use the following command to see the .git directory
 
 ```
 ls -a
@@ -36,7 +36,15 @@ ls -a
 
 ### Git tracks a directory and all its nested directories
 
-We dont want to intialize a repo inside another repo!!
+We dont want to intialize a repo inside another repo!! Before running `git init`, use `git status` to verify that you are not currently inside of a repo.
+
+_If_ you do initialize a repo inside of an existing repo, you can remove that repository by getting rid of the corresponding .git folder.
+
+```
+ > la -a
+ > . .. .git
+ > rm -rf .git
+```
 
 ### A commit is essentially a checkpoint in time of something you work on
 
@@ -47,3 +55,27 @@ We dont want to intialize a repo inside another repo!!
 - Commit - Commit everything that was previously added
 
 ## git add
+
+Use `git add` to add specific files to the staging area. Separate files with spaces to add multiple files at once.
+
+```
+> git add file1 file2 file3
+```
+
+You can also add all files modified using the following:
+
+```
+> git add .
+```
+
+## git commit
+
+We use the `git commit` command to actually commit changes from the staging area. When making a commit, we need a provide a commit message that summarizes the changes and work snapshotted in the commit.
+
+```
+> git commit -m "put messahe here"
+```
+
+The -m flag lets us pass in an inline commit message, rather then launching a text editor.
+
+You _can_ just type `git commit`, and it will commit all staged changes. This opens up a text editor and prompts you for a commit message. But this is a little redundant, imo, when you can just do write everything inline with the -m flag.
