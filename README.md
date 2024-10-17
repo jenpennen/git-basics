@@ -13,7 +13,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ## Features (Kinda)
 
-- **Blame Shifting**: Pushing mysterious bugs to the repo and prentending they were always there. It's never my fault. It's Git's fault.
+- **Blame Shifting**: Pushing mysterious bugs to the repo and pretending they were always there. It's never my fault. It's Git's fault.
 - **Branching Like a Pro** : Watch as I create more branches than a tree and then forget what each one does. : )
 - **Commitment Issues** : Why settle for one commit when you can --amend everything five times?
 - **Merge Mayhem** : Here's where conflicts come to party. I resolve them eventually. Sometimes with a good old-fashioned git reset --hard (don't judge me).
