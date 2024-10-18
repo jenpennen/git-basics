@@ -62,7 +62,7 @@ Use `git add` to add specific files to the staging area. Separate files with spa
 > git add file1 file2 file3
 ```
 
-You can also add all files modified using the following:
+You can stage all changes at once using:
 
 ```
 > git add .
