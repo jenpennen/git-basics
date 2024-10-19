@@ -4,12 +4,7 @@ Welcome. This is a _highly seriously_ and _very professional_ project where I le
 
 ## What's This All About?
 
-This repo exists solely for the purpose of me mastering Git like a pro. Or at least trying to. You'll witness thrilling commit messages like:
-
-- fix: actually fix the thing this time
-- feat: add some stuff, not sure what it does yet
-- bug: there's definitely a bug, but good luck finding it
-- WIP: pls ignore
+This repo exists solely for the purpose of me mastering Git like a pro. Or at least trying to.
 
 ## Features (Kinda)
 
