@@ -1,5 +1,7 @@
 # Lecture 0: Git Basics
 
+hihihi
+
 ## What is Git?
 
 A (very popular) version control system (vcs).

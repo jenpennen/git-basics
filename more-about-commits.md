@@ -32,3 +32,11 @@ Or if you read up to this point (yay :D), you can write your new commit message 
 ```
 > git commit --amend -m "did something new"
 ```
+
+OR let's say you don't want to change the commit message but want to include a new file. You can add the new file and use the following `git --amend` command to not change the commit message:
+
+```
+> git commit -m "in this commit you forgot to stage a file"
+> git add forgotten_file
+> git commit --amend --no-edit
+```
