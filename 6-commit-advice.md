@@ -1,9 +1,8 @@
-# Advice on Commits
+# Commit Advice
 
 ## Keep commits atomic.
 
-When possible, a commit should contain a single feature, change or fix. **Don't try to keep each commit focused on a single thing**
-This makes it much easier to undo or rollback on changes later on, and also easier to review.
+Whenever possible, make sure each commit addresses a single feature, change, or fix. **Avoid bundling multiple changes into one commit.** This approach simplifies reversing or undoing changes later and makes code reviews easier.
 
 ## Use Present tense imperative style commit messages (according to git docs)
 
@@ -14,7 +13,7 @@ Examples:
 - change xyz to do something
 ```
 
-I don't do this. And most people I know don't either. Most people I know, myself included, prefer to use past tense.
+However, I don't personally follow this, and neither do many people I know. Most of us prefer using past tense for commit messages.
 
 Examples:
 
@@ -23,8 +22,9 @@ Examples:
 - resolved zyx on/to [thing/action]
 ```
 
-Personally, this makes the most sense, since you make a commit with the work you've already modified.
+This feels more natural since you're committing work that's already been completed.
 
 _BUT_
-Git uses the same imperative style and it shows when you do merges with commit messages: `Merge pull request`
-It tells someone what applying that commit will do, so it reads something like: `"If I apply this commit, it will [make xyz do something]"` But again, using present tense, imperative isn't mandatory. Just keep the messages consistent with whatever style you prefer or what the org/project you work for prefers.
+Git defaults to the imperative style, which becomes noticeavle in merge commit messages like `Merge pull request`. It indicates what will happen when the commit is applied, reading something like: `"If I apply this commit, it will [make xyz do something]`.
+
+That said, using the imperative form isn't a requirement. Just keep your commit messages consistent, either with your own style or the standards of the organization or project you're working on.

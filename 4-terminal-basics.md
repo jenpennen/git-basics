@@ -26,7 +26,7 @@ lists the contents of subfolder in foldername
 `open .` opens the current directory in Finder (Mac).
 
 ```
-~ > open .
+ > open .
 ```
 
 ## start .
@@ -34,7 +34,7 @@ lists the contents of subfolder in foldername
 `start .` opens the current directory in File Explorer (Windows).
 
 ```
-~ > start .
+ > start .
 ```
 
 ## pwd - (Print Working Directory)

@@ -31,7 +31,7 @@ You'll be using this constantly, so it's important to remember. But don't worry 
 This command creates an empty Git repository, including a hidden `.git` directory with subdirectories for objects, refs/heads, refs/tags, and template files. To view the `.git` directory, since it's hidden, you can use the following command:
 
 ```
-ls -a
+> ls -a
 ```
 
 ### Git tracks a directory and all its nested directories
