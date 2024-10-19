@@ -1,6 +1,4 @@
-# Lecture 0: Git Basics
-
-hihihi
+# Git Basics
 
 ## What is Git?
 
@@ -8,29 +6,29 @@ A (very popular) version control system (vcs).
 
 ## What's a Version Control System?
 
-Version control is software that tracks and manages changes to files over time. It's a fundamental tool we need to revisit earlier versions of the files, compare changes between versions, undo changes, and a lot mmore.
+Version control is a type of software that monitors and manages changes to files over time. It's an essential tool that allows us to revert to previous versions, compare differences between versions, undo modifications, and much more.
 
-Git is just one of _many_ vcs available. Others include Subversion, CVS, and Mercurial, but Git is the most popular. Honestly, I don't know anyone as of 2023 using the other version control systems I mentioned.
+Git is just one of _many_ version control systems (VCS) available. Others include Subversion, CVS, and Mercurial, though Git is by far the most widely used. To be honest, I don't know anyone still using the other systems as of 2023.
 
 ## What is a Git Repo?
 
-A Git "Repo" is a workspace which _ tracks and manages files within a folder_ . Anytime we want to use Git with a project, app, etc, we need to create a new git repository. We can have as many repos on our machine as needed, all with separate histories and contents.
+A Git "repository" (or repo for short) is a workspace that tracks and manages files within a folder. Whenever we want to use Git for a project, app, or similar, we need to create a new Git repository. You can have as many repos as needed on your machine, each with its own history and content.
 
-I like to think of git as checkpoints. You work on some project and make gradual changes on it.
+I like to think of Git as a system of checkpoints. As you work on a project, you make gradual changes, and Git helps track those changes step by step.
 
 # Some git commands
 
-You''' use this everywhere. Don't forget it, but there won't be any forgetting bc you store all your projects in git anyway. Just in case tho...
+You'll be using this constantly, so it's important to remember. But don't worry -- you probably won't forget, since all your projects will be stored in Git anyway. Just in case, though...
 
 ## git status
 
-gives information on the current status of a git repository and its contents.
+`git status` provides information about the current state of a Git repository and its contents. It shows any changes made to files, whether they have been stages for commit, or if there are any untracked files.
 
 ## git init
 
-used to create a git repository. Before doing anything git-related, we must initialize a repo first. This is only done ONCE per project. Initialize the repo in the top-level folder containing your project.
+`git init` is used to create a new Git repository. Before working with Git on a project, you must initialize the repository, which only needs to be done once per project. It's typically intialized in the top level folder of your project.
 
-Creates an empty git repository, or a .git directory with subdirectories for objects, refs/heads, refs/tags, and template files files. They're hidden so you don't mess around with it. You can use the following command to see the .git directory
+This command creates an empty Git repository, including a hidden `.git` directory with subdirectories for objects, refs/heads, refs/tags, and template files. To view the `.git` directory, since it's hidden, you can use the following command:
 
 ```
 ls -a
@@ -38,33 +36,31 @@ ls -a
 
 ### Git tracks a directory and all its nested directories
 
-We dont want to intialize a repo inside another repo!! Before running `git init`, use `git status` to verify that you are not currently inside of a repo.
+It's important not to initialize a Git repository inside an existing one! Before running `git init`, use `git status` to verify that you are not currently inside a Git repo.
 
-_If_ you do initialize a repo inside of an existing repo, you can remove that repository by getting rid of the corresponding .git folder.
+_If_ you accidentally initialize a repository within another, you can remove it by deleting the corresponding `.git` folder. Here's how you can do it:
 
 ```
- > la -a
- > . .. .git
- > rm -rf .git
+ > ls -a # List all files, including hidden ones
+ > # Output will show: . .. .git
+ > rm -rf .git # Remove the .git folder to delete the repository
 ```
-
-### A commit is essentially a checkpoint in time of something you work on
 
 ## The Basic Git Workflow
 
-- Work on stuff - Make new files, edits files, delete files, etc
-- Add changes - Group specific changes together, in prep of committing
-- Commit - Commit everything that was previously added
+1. **Work on your project** - create new files, modify existing ones, or delete files as needed.
+2. **Stage your changes** - Group the specific changes you want to commit by adding them to the staging area.
+3. **Commit your changes** - Commit all the staged changes as a snapshot of your work.
 
 ## git add
 
-Use `git add` to add specific files to the staging area. Separate files with spaces to add multiple files at once.
+Use `git add` to add specific files to the staging area in preparating for committing. You can add multiple files at once by separating them with spaces.
 
 ```
 > git add file1 file2 file3
 ```
 
-You can stage all changes at once using:
+To stage all changes at once, use:
 
 ```
 > git add .
@@ -72,12 +68,14 @@ You can stage all changes at once using:
 
 ## git commit
 
-We use the `git commit` command to actually commit changes from the staging area. When making a commit, we need a provide a commit message that summarizes the changes and work snapshotted in the commit.
+**A commit is essentially a checkpoint in the progress of something you're working on**
+
+After staging, use the `git commit` command to save your changes to the repository. Each commit requires a message to summarize the changes:
 
 ```
-> git commit -m "put messahe here"
+> git commit -m "put message here"
 ```
 
-The -m flag lets us pass in an inline commit message, rather then launching a text editor.
+The `-m` flag allows you to include the commit message directly without opening a text editor.
 
-You _can_ just type `git commit`, and it will commit all staged changes. This opens up a text editor and prompts you for a commit message. But this is a little redundant, imo, when you can just do write everything inline with the -m flag.
+You can also just type `git commit`, which will commit all staged changes and open a text editory to write your message. However, using the `-m` flag to write the message inline is quicker and more convenient in most cases.
