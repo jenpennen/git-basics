@@ -14,6 +14,8 @@ You can use the command above to get a shorter commit hash and a one line descri
 
 If you made a commit and then realized you forgot to include a file or made a typo in the commit message, and you want to correct it, you can "redo" the previous commit using the --amend option.
 
+**However, you can only amend a commit right after you've made the commit. You cannot amend a commit if you pushed the commit you want to amend!**
+
 ```
 > git commit -m "some commit"
 > git add forgotten_file
