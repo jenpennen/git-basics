@@ -1,51 +1,69 @@
 # Terminal basics
 
 ## ls (List)
-lists the contents of your current directory
-** Home directory is indicated with ~ ***
 
-## ls [foldername] or ls [foldername]/ 
+`ls` lists the contents of your current directory
+** Home directory is indicated with `~` **
+
+`ls [foldername] or ls [foldername]/`
+
 lists the contents of foldername directory
+
 ```
-> ls Desktop or ls Desktop/ 
+> ls Desktop or ls Desktop/
 ```
 
-## ls [foldername]/[subfolder]
+`ls [foldername]/[subfolder]`
+
 lists the contents of subfolder in foldername
+
 ```
 > ls Desktop/Basics
 ```
 
 ## open .
-will open up in Finder (on Mac) the same directory where you currently are
+
+`open .` opens the current directory in Finder (Mac).
+
 ```
-~ > open . 
- ```
+~ > open .
+```
 
 ## start .
-will open up in Windows the same directory where you currently are
+
+`start .` opens the current directory in File Explorer (Windows).
+
 ```
-~ > start . 
+~ > start .
 ```
 
-## pwd - (Print Working Directory) 
-prints out the path to the working directory ( where you currently are)
+## pwd - (Print Working Directory)
+
+`pwd` displays the full path to your current working directory.
+
 ```
 > pwd
-> /Users/jennycho/Desktop (on Mac) and /c/Users/jennycho (on Windows for c drive)
+# Example Output:
+# /Users/jennycho/Desktop (on Mac)
+# /c/Users/jennycho (on Windows for c drive)
 ```
 
 ## cd [directory] - (change directory)
-changes directories
+
+`cd [directory]` moves you to a different directory.
+
 ```
     > cd Desktop
     > cd Basics
     > pwd
-    > /Users/jennycho/Desktop/Basics **
+    # Example Output:
+    # /Users/jennycho/Desktop/Basics **
 ```
 
-## cd .. 
-takes us back one level (one folder) 
+## cd ..
+
+`cd ..` moves you up one directory level.
+
 ```
     > pwd
     > /Users/jennycho/Desktop/Basics
@@ -55,40 +73,39 @@ takes us back one level (one folder)
 ```
 
 # touch [filename].txt (Touch)
-creates a file (or multiple) 
+
+`touch [filename].[filetype]` creates a file (or multiple files)
+
 ```
-    > touch git-basics.txt (for one file)
-    > touch terminal-basics.txt read.pdf cs103.txt etc... (multiple files)
-    > touch Desktop/Basics/example.txt
+    > touch git-basics.txt # One file
+    > touch terminal-basics.txt read.pdf cs103.txt # Multiple files
+    > touch Desktop/Basics/example.txt # File in a specific folder
 ```
 
-## mkdir - (make directory) 
-will create a new directory or directories
+## mkdir - (make directory)
+
+`mkdir` creates a new directory (or multiple directories)
+
 ```
     > mkdir git-basics
-    > mkdir cs103 cs104 etc (multiple folders)
+    > mkdir cs103 cs104 # Multiple folders
 ```
 
-## rm [filename] 
-deletes a file or files (permanently removes them)
+## rm [filename]
+
+`rm [filename]` deletes a file or files (permanently)
+
 ```
     > rm example.txt
     > rm example.txt second.txt etc
 ```
 
 ## rm -rf [foldername]
-deletes a folder (or directory) permanently _(r = recursive f = force)_
+
+`rm -rf [foldername]` deletes a folder (or directory) permanently _(r = recursive f = force)_
+
 ```
-> rm -rf cs103 
+> rm -rf cs103
 ```
 
-*** make sure important folders are saved somewhere in case you delete them ***
-
-
-
-
-
-
-
-
-
+**Note:** Make sure important folders are saved somewhere in case you delete them!

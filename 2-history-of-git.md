@@ -1,40 +1,38 @@
-# A Little Bit of Git History
+# A Brief History of Git
 
-## Linus Torvald
+## Linus Torvalds
 
-He's a software engineer and creator behind Linux and Git. He was frustrated with the available version control systems(vcs) because they were slow, close-sources, and usually paid, while working on Linux. (this was back in 2005)
+Linus Torvalds, the creator of Linux and Git, was frustrated with the available version control systems (VCS) at the time. While working on Linux (back in 2005), he found the existing tools to be slow, close-sources, and often required payment (paywalled).
 
 ## Linux
 
-Before git, Linux was using a different vcs called BitKeeper - basically did what Git does. But the owners of BitKeeper established a paywall and frustrated Linus. The free options weren't good enough- didn't have the features that BitKeeper had that Linus needed, so he built one himself.
+Before Git, the Linux project used a VCS called BitKeeper, which worked similarly to Git. However, when BitKeeper's owners introduced a paywall, it frustrated Linus. The free alternatives weren't powerful enough and lacked the features he needed. So, he decided to create his own system.
 
 ## Git
 
-Linus wanted a vcs that was fast and free, unlike the existing tools. He actually wrote most of the basic git funtionality in a few days (which is a lot less than the time I'm taking to learning Git ... :,D)
+Linus wanted a fast and free VCS, unlike the ones that existed at the time. He actually wrote most of Git’s core functionality in just a few days (which is much quicker than the time it's taking me to learn Git, haha). The first official Git release came a couple of months later, which is still impressive considering it's been years since I first touched Git, and I’m still learning. Today, more than 90% of developers use Git. Pretty wild!
 
-Anyways, the first official Git release came a couple months later (still very impressive considering it's been a few years since I've touched Git and I'm still learning as I go lol) and more than 90% of developers use Git now. Crazy.
+## Where the Name Git Came From
 
-## Behind the Name
+According to the Git documentation, the name "Git" can mean different things depending on your mood:
 
-According to the Git docs, the name means three different things deending on your mood:
-
-- a random three-letter combo that is pronouncable and not used by any common UNIX command
-- "global info tracker"
-- "Goddamn idiotic truckload of shit": great for when it breaks :)
+- A random, pronounceable three-letter combination not used by any common UNIX commands
+- "Global info tracker"
+- "Goddamn idiotic truckload of shit" (perfect for when things go wrong!)
 
 ## Who uses Git?
 
-Obviously, engineers and coders. It's a must have skill.
+Obviously, engineers and coders rely heavily on Git—it’s a must-have skill.
 
-But it's not just for tech roles. A huge reason I started this repo was that I needed git a lot in my work as a product designer at Retune, and so did my other designer and writer friends. It's safe to say, many tech adjacent roles also learn Git to better collaborate with their tech coworkers.
+But it’s not limited to tech roles. I started using Git frequently during my time as a product designer at Retune, and many of my designer and writer colleagues have adopted it too. So, tech-adjacent roles often learn Git to collaborate more effectively with their technical teams.
 
-Scientists use git to manage code, data sets, and more.
+Scientists also use Git to manage code, datasets, and other materials.
 
-_But Also_ The government also uses git and github to draft out laws. Washington DC City council uses Git and Github to publish laws, and citizens can even collaborate on it to fix typos and such!
+_Even_ government agencies use Git and GitHub for drafting laws. For example, Washington D.C.'s City Council publishes laws on GitHub, allowing citizens to contribute by fixing typos and more!
 
 You can check out the link here: `https://government.github.com/community/`
-to learn more about the different governments that use github (built on top of git).
+to learn more about the different governments that use github, which is built on top of Git (more on this later).
 
-## tldr Anyone can use Git
+## TLDR: Anyone can use Git
 
-I'm literally using git+ github to store git knowledge I might forget later on. But there's a lot of creative ways to use git, some examples written above this section. It a great way to track both small and large changes made over time.
+I’m using Git and GitHub to store knowledge I might forget later on. There are plenty of creative ways to use Git, from tracking small edits to managing large projects, as shown in the examples above. It’s a great tool for tracking changes over time.
