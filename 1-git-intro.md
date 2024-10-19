@@ -73,7 +73,7 @@ To stage all changes at once, use:
 After staging, use the `git commit` command to save your changes to the repository. Each commit requires a message to summarize the changes:
 
 ```
-> git commit -m "put message here"
+> git commit -m "your commit message here"
 ```
 
 The `-m` flag allows you to include the commit message directly without opening a text editor.
