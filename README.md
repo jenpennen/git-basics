@@ -1,6 +1,6 @@
 # Git Basics
 
-Welcome. This is a _highly seriously_ and _very professional_ project where I learn the arcane rituals of Git, one typo at a time. If you're here looking for groundbreaking code, you might want to turn around - because this is where I break stuff ... and then commit it. lol
+Welcome. This is a _highly seriously_ and _very professional_ project where I learn the arcane rituals of Git, one typo at a time. If you're here looking for groundbreaking code, you might want to turn around - because this is where I just write about Git ... and then commit it. :)
 
 ## What's This All About?
 
