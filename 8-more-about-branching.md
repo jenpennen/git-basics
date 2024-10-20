@@ -2,7 +2,7 @@
 
 ## Viewing Branches
 
-You use `git branch` to view your existing branches.
+To view your existing branches, use the command `git branch`:
 
 ```
 > git branch
@@ -11,11 +11,11 @@ OUTPUT:
 (END)
 ```
 
-The default branch in every git repo is `main`, but you can configure this (more on this later). The `*` (asterisk) represents the branch you are currently on. If you want to leave the text editor displaying your branches, type `:q`.
+The default branch in most git repository is `main`, but this can be configured (more on that later). The `*` (asterisk) represents the branch you're currently on. If you're in a text editor viewing branches, type `:q` to exit.
 
 ## Creating New Branches
 
-Use `git branch <branch-name>` to make a new branch based on the current `HEAD`. This just creates the branch. It does not switch you to that branch (the `HEAD` stays the same).
+To create a new branch based on the current `HEAD`, use `git branch <branch-name>`. This only creates the branch and doesn't switch you to it (`HEAD` stays the same).
 
 ```
 > git branch songs
@@ -23,16 +23,16 @@ Use `git branch <branch-name>` to make a new branch based on the current `HEAD`.
 
 ## Switching Branches
 
-Once you have created a new branch, use `git switch <branch-name>` to switch to it.
+After creating a new branch, switch to it using `git switch <branch-name>`.
 Example:
 
 ```
-> git branch songs # songs branch created
-> git switch songs
+> git branch songs # creates the 'songs' branch
+> git switch songs # switches to the 'songs' branch
 OUTPUT: Switched to branch 'songs'
 ```
 
-`HEAD` will now point to the `songs` branch, not `main`. You can check this by checking `git log` and `git status`. You will see something like:
+Now, `HEAD` will now point to the `songs` branch instead of `main`. You can confirm this by checking `git log` and `git status`
 
 ```
 > git switch songs
@@ -45,8 +45,19 @@ OUTPUT:
 commit 7ec8c8431b5c2cc0536f7be935efa834fb044be7 (HEAD -> songs, origin/songs)
 ```
 
-**NOTE:** When you modify anything on a branch, you must commit it or stash it before switching to another branch. (We'll go more on this later)
+**NOTE:** If you've made changes on a branch, you need to commit or stash them before switching to another branch (more on this later).
 
-## Another Way of Switching
+## Creating AND Switching
 
-Historically, we used `git checkout <branch-name>` to switch branches. This still works. The checkout command also does a ton of other things, so the decision was made to add a standalone switch command which is much simpler. You'll see older tutorials and docs using checkout rather than switch. Both now work.
+To create AND switch to a new branch in a single step, use the `-c` flag with `git switch`. The `-c` stands for "create".
+
+```
+# git switch -c <branch-name>
+> git switch -c hobbies
+```
+
+## Another Way of Switching: `git checkout`
+
+Historically, `git checkout <branch-name>` was used to switch branches, and it still works. However, since checkout has several other functions, the simpler `git switch` command was introduced specifically for switching branches. Older tutorials may use `git checkout`, but both commands work for this purpose.
+
+While `git checkout` can be used for other tasks like restoring files, we'll focus on branch switching here. Personally, I prefer using `git switch` as it is more straightforward and intended specifically for switching branches.
