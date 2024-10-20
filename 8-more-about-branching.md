@@ -45,7 +45,15 @@ OUTPUT:
 commit 7ec8c8431b5c2cc0536f7be935efa834fb044be7 (HEAD -> songs, origin/songs)
 ```
 
-**NOTE:** If you've made changes on a branch, you need to commit or stash them before switching to another branch (more on this later).
+**NOTE:** If you've made changes on a branch, you need to **commit or stash** them before switching to another branch (more on this later).
+
+## `git stash`
+
+We'll cover this in more depth in the merging sections. If you don’t stash your changes, any files specific to that branch will carry over when you switch to another branch. In cases of conflicts, Git will alert you. As a best practice, always commit or stash your changes before switching branches.
+
+```
+> git stash
+```
 
 ## Creating AND Switching
 
@@ -61,3 +69,5 @@ To create AND switch to a new branch in a single step, use the `-c` flag with `g
 Historically, `git checkout <branch-name>` was used to switch branches, and it still works. However, since checkout has several other functions, the simpler `git switch` command was introduced specifically for switching branches. Older tutorials may use `git checkout`, but both commands work for this purpose.
 
 While `git checkout` can be used for other tasks like restoring files, we'll focus on branch switching here. Personally, I prefer using `git switch` as it is more straightforward and intended specifically for switching branches.
+
+## Deleting a Branch
