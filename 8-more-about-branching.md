@@ -44,3 +44,9 @@ Your branch is up to date with 'origin/songs'.
 OUTPUT:
 commit 7ec8c8431b5c2cc0536f7be935efa834fb044be7 (HEAD -> songs, origin/songs)
 ```
+
+**NOTE:** When you modify anything on a branch, you must commit it or stash it before switching to another branch. (We'll go more on this later)
+
+## Another Way of Switching
+
+Historically, we used `git checkout <branch-name>` to switch branches. This still works. The checkout command also does a ton of other things, so the decision was made to add a standalone switch command which is much simpler. You'll see older tutorials and docs using checkout rather than switch. Both now work.
