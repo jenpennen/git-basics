@@ -16,11 +16,11 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ## How to Contribute
 
-Please don't. If you fix things, it will ruin the mystique of my unpolished Git skills. _But_ if you insist, submit a PR with the subject: You Git This Wrong, Let Me Help. I will either:
+Please don't. If you fix things, it will ruin the mystique of my unpolished Git skills. _But_ if you insist, submit a PR with the subject: `You Git This Wrong, Let Me Help`. I will either:
 
 - Accept it and pretend I did it all along.
 - Ignore it and go back to merging conflicts I created myself.
 
 ## License
 
-There is no license. It's not that serious.
+There is no license. It's not that serious. &#9786;
