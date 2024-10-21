@@ -1,6 +1,6 @@
 # Git Basics
 
-Welcome. This is a _highly seriously_ and _very professional_ project where I learn the arcane rituals of Git, one typo at a time. If you're here looking for groundbreaking code, you might want to turn around - because this is where I just write about Git ... and then commit it. &#9786;
+Welcome. This is a _highly serious_ and _very professional_ project where I learn the arcane rituals of Git, one typo at a time. If you're here looking for groundbreaking code, you might want to turn around - because this is where I just write about Git ... and then commit it. &#9786;
 
 ## What's This All About?
 
@@ -11,8 +11,8 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - [x] Git Intro
 - [x] History of Git
 - [x] Commits
-- [in progress] Branching
-- [in progress ] Merging Branches
+- [x] Branching
+- [in progress] Merging Branches
 
 ## How to Contribute
 

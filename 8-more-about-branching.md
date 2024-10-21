@@ -11,7 +11,7 @@ OUTPUT:
 (END)
 ```
 
-The default branch in most git repository is `main`, but this can be configured (more on that later). The `*` (asterisk) represents the branch you're currently on. If you're in a text editor viewing branches, type `:q` to exit.
+The default branch in most git repositories is `main`, but this can be configured (more on that later). The `*` (asterisk) represents the branch you're currently on. If you're in a text editor viewing branches, type `:q` to exit.
 
 ## Creating New Branches
 
@@ -70,7 +70,7 @@ After switching branches, you can reapply your stashed changes with:
 > git stash pop
 ```
 
-### Switching and Creating a nNew Branch
+### Switching and Creating a New Branch
 
 If you want to both create a new branch and switch to it immediately,
 you can use the `-c` flag with `git switch`. The `-c` stands for "create".
@@ -144,7 +144,7 @@ To delete a branch from the remote repository (e.g., on Github or GitLab), use t
 Example:
 
 ```
-git push origin --delete feature-branch
+> git push origin --delete feature-branch
 ```
 
 This removes the branch from the remote repositoru, meaning it will no longer be accessible to others.
