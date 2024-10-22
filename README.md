@@ -10,8 +10,12 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 - [x] Git Intro
 - [x] History of Git
+- [x] Git vs Github
+- [x] Terminal Basics
 - [x] Commits
-- [x] Branching
+- [x] Commit Advice
+- [x] Branching Overview
+- [x] More on Branching
 - [in progress] Merging Branches
 
 ## How to Contribute
