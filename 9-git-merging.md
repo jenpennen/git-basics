@@ -36,8 +36,13 @@ In the case above, Git takes the commits from hobbies and merges them into the `
 - Git simply moves the target branch pointer forward to the latest commit of the source branch. No new merge commit is created.
 
 ```
-> git merge feature-xyz
+> git switch main #the target branch
+> git merge childhood-favorites # the source branch
 ```
+
+The not only brings in the contents from the childhood-favorites branch to the main branch, but it also merges the commits from `childhood-favorites` to `main`. You can check this using `git log`.
+
+**Note**: When you merge the source branch with the target branch, that is just one moment where a change from one branch is synced to another branch. We can keep working on the source branch and any changes made to it will **not** exist on the target branch.
 
 ### Three-Way Merge
 

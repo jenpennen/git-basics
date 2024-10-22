@@ -13,6 +13,14 @@ OUTPUT:
 
 The default branch in most git repositories is `main`, but this can be configured (more on that later). The `*` (asterisk) represents the branch you're currently on. If you're in a text editor viewing branches, type `:q` to exit.
 
+You can also use the following command:
+
+```
+> git branch -v
+```
+
+This will display the most recent commits including the commit message, the tip of the branch, and the branch name.
+
 ## Creating New Branches
 
 To create a new branch based on the current `HEAD`, use `git branch <branch-name>`. This only creates the branch and doesn't switch you to it (`HEAD` stays the same).
