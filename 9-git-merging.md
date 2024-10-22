@@ -2,7 +2,7 @@
 
 ## Overview
 
-Branching makes it easy to work within self-contained contexts, but you'll often need to integrate changes from one branch into another. This is where **Git merging** comes in, allowing you to combine changes from different branches into a single history without losing any work. This can be done with the `git merge` command.
+Branching makes it easy to work within self-contained contexts, but you'll often need to integrate changes from one branch into another. This is where **git merging** comes in, allowing you to combine changes from different branches into a single history without losing any work. This can be done with the `git merge` command.
 
 ## How Git Merging Works
 
