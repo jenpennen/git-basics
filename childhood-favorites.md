@@ -3,5 +3,7 @@
 ## Movies
 
 Home Alone 1 & 2
-Barbie and the Princess Pauper
-Barbie in a Fashion Fairytale
+Tangled
+Frozen
+How to Train Your Dragon 1&2
+Beauty and the Beast
