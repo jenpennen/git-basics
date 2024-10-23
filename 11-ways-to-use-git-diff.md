@@ -26,9 +26,26 @@ Without additional options, `git diff` lists all the changes in our working dire
 
 ## Diff-ing Specific Files
 
-We can view the changes within a specific file by providing a git diff with a filename.
+### Comparing Files
+
+We can view the changes within a specific file by providing a git diff along with some filename(s).
 
 ```
 > git diff HEAD [filename]
 > git diff --staged [filename]
+> git diff HEAD [filename1] [filename1]
+```
+
+Example:
+
+```
+> git diff HEAD los-angeles-places.md
+```
+
+### Comparing Branches
+
+`git diff branch1...branch2` will list the changes between the tips of branch1 and branch2.
+
+```
+> git diff branch1...branch2
 ```
