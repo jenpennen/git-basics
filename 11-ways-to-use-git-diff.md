@@ -12,28 +12,29 @@ The `git diff` command compares changes in files across different Git "stages". 
 
 ### `git diff`
 
-Without additional options, `git diff` lists all the changes in our working directory that are **NOT staged for the next commit**.
+Running `git diff` by itself lists all the changes in your working directory that are **NOT staged for the next commit**.
 
 ### `git diff HEAD`
 
-`git diff HEAD` lists ALL changes in the working tree since your last commit.
+`git diff HEAD` lists **all changes**, both staged and unstaged, in the working tree since your last commit.
 
-**NOTE**: It's easy to confuse `git diff` and `git diff HEAD`. Remember that git diff shows the unstaged changes, while git diff HEAD shows all the changes (both staged and unchanged) in the working directory since HEAD.
+**Reminder**: `git diff` only shows unstaged changes, while `git diff HEAD` shoes everything (both staged and unstaged) since the last commit (HEAD)
 
 ### `git diff --staged` & `git diff --cached`
 
-`git diff --staged` or `git diff --cached` will list the changes between the staging area and our last commit. "Show me what will be included in my commit if I run git commit right now".
+`git diff --staged` or `git diff --cached` lists the differences between the staged changes and your last commit. Essentially, the answer the question: "What will be committed if I run `git commit` now?"
 
 ## Diff-ing Specific Files
 
-### Comparing Files
+### File Comparisons
 
-We can view the changes within a specific file by providing a git diff along with some filename(s).
+We can view the changes within a specific file (or files) by providing a git diff along with the filename(s).
 
 ```
 > git diff HEAD [filename]
 > git diff --staged [filename]
 > git diff HEAD [filename1] [filename1]
+> git diff --staged [filename1] [filename2]
 ```
 
 Example:
@@ -44,8 +45,33 @@ Example:
 
 ### Comparing Branches
 
-`git diff branch1...branch2` will list the changes between the tips of branch1 and branch2.
+`git diff branch1...branch2` will show the differences between the latest commits on both branches.
 
 ```
-> git diff branch1...branch2
+> git diff branch1..branch2
 ```
+
+Example:
+
+```
+> git diff main..songs
+```
+
+You will probably see changes across multiple files.
+
+### Comparing Commits
+
+To compare changes between two commits, provide git diff with the commit hashes.
+
+```
+> git diff <commit1>..<commit2>
+```
+
+Example:
+
+```
+> git diff 56f5b94..bd83dc1
+```
+
+You can get the commit hashes using `git log`.
+**Note**: The order of files, branches, or commits in the `git diff` command matters, since it determines the direction of the comparison.
