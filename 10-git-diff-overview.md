@@ -2,14 +2,6 @@
 
 `Git diff` is a command used to show the differences between various states of your repository. It compares changes in your working directory, the staging area, or between specific commits. This command helps you understand exactly what has been modified before committing changinges, during code reviews, or when troubleshooting merge conflicts. We often use `git diff` alongside commands like `git status` and `git log` to get a better picture of a repository and how it has changed over time.
 
-## How `git diff` Works
-
-The `git diff` command compares changes in files across different Git "stages". There are three main areas Git tracks:
-
-1. **Working Directory**: Your current uncommitted changes.
-2. **Staging Area**: Changes that have been added using `git add` but not yet committed.
-3. **Repository**: The latest committed version of your files.
-
 ## How to Read a `git diff` Output
 
 When you run the `git diff` command, Git generates an output that shows the differences between two versions of your files. Understanding this output is crucial for reviewing changes before committing, troubleshooting, and resolving conflicts. Below is a guide to helo you navigate and interpret the output of `git diff`.
@@ -109,7 +101,7 @@ Every line that changed between the two files is marked with either a + or - sym
 +- [ ] Stashing
 ```
 
-The `+-` in the contect above indicates that the line was modified in both files A and B. Let's take a look at another example:
+The `+-` in the context above indicates that the line was modified in both files A and B. Let's take a look at another example:
 
 ```
  Beauty and the Beast
@@ -120,6 +112,39 @@ The `+-` in the contect above indicates that the line was modified in both files
 +To All The Boys I've Loved
 ```
 
-In the context above, the line `-Pride and Prejudice` come from File A (indicated by minus sign) but is not in File B . The lines that begin with `+` come from File B but are not in File A. The lines with no signs indicate they exist on both files.
+In the context above, the line `-Pride and Prejudice` come from File A (indicated by minus sign) but is not in File B . The lines that begin with `+` come from File B but are not in File A. The lines with no signs indicate they exist on both files, also called **context lines**.
 
 **Note:** Usually, Git picks A and B for us in a way where A represents old stuff and B represents new stuff, but **that is not always the case**.
+
+### Other Types of Differences
+
+#### New Files
+
+When a new file is added, the output looks like this:
+
+```
+new file mode 100644
+index 0000000..b5fc6a2
+--- /dev/null
++++ b/newfile.js
+@@ -0,0 +1,5 @@
++console.log("This is a new file");
+```
+
+- `new file mode 100644`: indicates that this is a new file with standard file permissions.
+- `--- /dev/null`: The new file doesn't exist in File A
+- `+++ b/newfile.js` : The new file exists in File B.
+
+#### Deleted Files
+
+When a file is deleted, the diff looks like this:
+
+```
+deleted file mode 100644
+index b5fc6a2..0000000
+--- a/oldfile.js
++++ /dev/null
+```
+
+- `deleted file mode 100644`: Indicates that the file has been removed.
+- `+++ /dev/null`: Shows that the new version of the file does not exist.
