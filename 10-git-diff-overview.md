@@ -4,15 +4,15 @@
 
 ## How to Read a `git diff` Output
 
-When you run the `git diff` command, Git generates an output that shows the differences between two versions of your files. Understanding this output is crucial for reviewing changes before committing, troubleshooting, and resolving conflicts. Below is a guide to helo you navigate and interpret the output of `git diff`.
+When you run the `git diff` command, Git generates an output that shows the differences between two versions of your files. Understanding this output is crucial for reviewing changes before committing, troubleshooting, and resolving conflicts. Below is a guide to how to interpret the output of `git diff`.
 
 ### Basic Structure of `git diff` Output
 
 When `git diff` compares two versions of a file, it uses the following symbols and format to display the changes:
 
-- Minus Sign (-): Represents the lines that have been removed in the new version.
-- Plus Sign (+): Represents lines that have been added in the new version.
-- Unchanged lines: Lines that are unchanged between versions are shown for context.
+- Minus Sign (-): Indicates lines that were only in the old version of file.
+- Plus Sign (+): Indicates lines that were only in the new version of file.
+- Unchanged lines: Lines that haven't changed between versions are shown for context.
 
 ### Sample `git diff` Output
 
@@ -47,7 +47,7 @@ Let's break this down step by step.
 
 #### Comparing Files
 
-For each comparison, Git explains which files it is comparing. Usually, this is two versions of the same file. Git also declares one file as "A" and the other as "B"
+For each comparison, Git explains which files it is comparing. Usually, this is two versions of the same file. Git declares one file as `A` and the other as `B`
 
 ```
 diff --git a/childhood-favorites.md b/childhood-favorites.md
@@ -55,15 +55,15 @@ diff --git a/childhood-favorites.md b/childhood-favorites.md
 
 #### File Metadata
 
-You don't really need to care about the file metadata. The first two numbers are the hashes of the two files being compared. The last number is an internal file mode identifier.
+This section contains file-specific metadata. The first two numbers are the commit hashes of the two files being compared. The last number is an internal file mode identifier.
 
 ```
 index 8dc3c53..22e876c 100644
 ```
 
-#### Markers
+#### File Markers
 
-File A and File B are each assigned a symbol.
+The files being compared are assigned symbols:
 
 - File A gets a minus sign (-)
 - File B gets a plus sign (+)
@@ -73,26 +73,28 @@ File A and File B are each assigned a symbol.
 +++ b/README.md
 ```
 
-#### Chunks
+In the case above, `--- a/README.md` refers to file A (the original version). `+++ b/README.md` refers to file B (the new version).
 
-A diff won't show the entire contents of a file, but instead only shows portions or "chunks" that were modified. A chunk also includes some unchanges lines before and after a change to provide some context.
+#### Chunks of Changes
+
+Instead of showing the entire file, `git diff` only shows the portions or "chunks" that were modified. A chunk also includes some unchanges lines before and after a change to provide some context.
 
 #### Chunk Header
 
-Each chunk starts with a chunk header, found between @@ and @@, and show where the changes are located in the file.
+Each chunk starts with a chunk header, found between @@ and @@, and shows where the changes are located in the file.
 
 ```
 @@ -18,6 +18,7 @@
 ```
 
 - `-18, 6`: Shows that the changes occur starting from line 18 in file A, and affect 6 lines.
-- `+18, 7`: Shows that the changes occur starting from line 18 in file B, and affect 7 lines.
+- `+18, 7`: Shows that the changes occur starting from line 18 in file B, and affects 7 lines.
 
 You can separate each chunk by its header.
 
 #### The Actual Changes
 
-Every line that changed between the two files is marked with either a + or - symbol. Lines that begin with `-` come from file A. Lines that begin with `+` come from file B.
+Each line that differs between the two files is marked with either a `+` or `-` symbol. Lines prefixed with `-` come from file A. Lines that begin with `+` come from file B.
 
 ```
  - [x] More on Branching
@@ -114,9 +116,9 @@ The `+-` in the context above indicates that the line was modified in both files
 
 In the context above, the line `-Pride and Prejudice` come from File A (indicated by minus sign) but is not in File B . The lines that begin with `+` come from File B but are not in File A. The lines with no signs indicate they exist on both files, also called **context lines**.
 
-**Note:** Usually, Git picks A and B for us in a way where A represents old stuff and B represents new stuff, but **that is not always the case**.
+**Note:** Usually, Git selects File A to represent the older version of the file and B for the newer version, but **that is not always the case**.
 
-### Other Types of Differences
+### Special Cases
 
 #### New Files
 
@@ -131,13 +133,13 @@ index 0000000..b5fc6a2
 +console.log("This is a new file");
 ```
 
-- `new file mode 100644`: indicates that this is a new file with standard file permissions.
+- `new file mode 100644`: Indicates that this is a new file with standard file permissions.
 - `--- /dev/null`: The new file doesn't exist in File A
 - `+++ b/newfile.js` : The new file exists in File B.
 
 #### Deleted Files
 
-When a file is deleted, the diff looks like this:
+When a file is deleted, the diff output looks like this:
 
 ```
 deleted file mode 100644
@@ -147,4 +149,4 @@ index b5fc6a2..0000000
 ```
 
 - `deleted file mode 100644`: Indicates that the file has been removed.
-- `+++ /dev/null`: Shows that the new version of the file does not exist.
+- `+++ /dev/null`: Shows that the file does not exist in the new version.
