@@ -4,7 +4,7 @@
 
 ## How to Read a `git diff` Output
 
-When you run the `git diff` command, Git generates an output that shows the differences between two versions of your files. Understanding this output is crucial for reviewing changes before committing, troubleshooting, and resolving conflicts. Below is a guide to how to interpret the output of `git diff`.
+When you run the `git diff` command, Git generates an output that shows the differences between two versions of your files. Below is a guide to how to interpret the output of `git diff`.
 
 ### Basic Structure of `git diff` Output
 
