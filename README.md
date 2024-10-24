@@ -17,8 +17,9 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - [x] Branching Overview
 - [x] More on Branching
 - [x] Merging Branches
-- [ ] Comparing Changes with Git Diff
-- [ ] Ways to Use Git Diff
+- [x] Comparing Changes with Git Diff
+- [x] Ways to Use Git Diff
+- [ ] Git Stash Overview
 
 ## How to Contribute
 
