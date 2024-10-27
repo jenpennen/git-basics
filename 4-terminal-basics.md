@@ -108,4 +108,5 @@ lists the contents of subfolder in foldername
 > rm -rf cs103
 ```
 
-**Note:** Make sure important folders are saved somewhere in case you delete them!
+> [!NOTE]
+> Make sure important folders are saved somewhere in case you delete them!
