@@ -44,6 +44,34 @@ This brings the changes from `childhood-favorites` into `main` and moves the com
 
 **Note**: After the merge, any further changes to the source branch won't automatically appear on the target branch and vice versa - you'll need to merge again if needed. **To reiterate**, you can keep working on the source branch and any changes made to it will **not** exist on the target branch.
 
+#### Beware ...
+
+There will be instances when Git will attempt to perform a fast-forward merge but can't, likely due to conflicting changes between your local branch and the remote branch.You might see some error like this:
+
+```
+To https://github.com/jenpennen/git-basics.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/jenpennen/git-basics.git'
+```
+
+A fast-forward merge is only possible when your branch has **no new commits diverging from the remote branch's history**. You can address this by performing a regular merge:
+
+```
+> git pull --no-ff origin main
+```
+
+Use a regular `git pull`, which will perform a non-fast-forward merge (will go more into this later). This will create a merge cmmit if there are conflicts, allowing you to resolve them manually.
+
+**You can also ...**
+
+```
+> git pull --rebase origin main
+```
+
+If you prefer to keep your commit history cleaner, rebase your changes on top of the remote branch. This applies your local changes after the latest changes from the remote branch. If there are any conflicts, Git will stop and prompt you to resolve them before continuing.
+
+**Note:** Avoid rebasing branches that have been shared with others or that others might be working on. Merging in these cases will preserve the shared commit history. Similarly, if the branch history is complex, merging will be a safer approach.
+
 ### Three-Way Merge (or Merge Commit)
 
 - Occurs when there have been changes in both the source and target branches since the source branch was created.
