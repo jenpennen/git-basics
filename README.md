@@ -8,7 +8,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ## Table of Contents
 
-### 1. Git Intro
+### [1. Git Intro](https://github.com/jenpennen/git-basics/blob/main/1-git-intro.md)
 
 - What's a Version Control System?
 
