@@ -113,6 +113,13 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ### [12. [in progress] Git Stash Overview](12-git-stash.md)
 
+- Why Git Stash is Useful
+- Basic Stashing Workflow
+- Additional git stash Options
+- Example Workflow
+
+### [13. [in progress] Undoing Changes in Git](13-undo-changes.md)
+
 ## Additional
 
 ### [Local Vs Remote](additional-local-vs-remote.md)
