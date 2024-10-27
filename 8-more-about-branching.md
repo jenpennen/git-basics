@@ -62,7 +62,8 @@ OUTPUT:
 commit 7ec8c8431b5c2cc0536f7be935efa834fb044be7 (HEAD -> songs, origin/songs)
 ```
 
-**NOTE:** If you've made changes on a branch, you need to **commit or stash** them before switching to another branch (more on this later).
+> [!NOTE]
+> If you've made changes on a branch, you need to **commit or stash** them before switching to another branch (more on this later).
 
 ### Stashing Changes Before Switching
 
