@@ -8,20 +8,22 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ## Table of Contents
 
-**1. Git Intro**
+### 1. Git Intro
 
 - What's a Version Control System?
+
 - What is a Git Repo?
+
 - Some Git Commands
 
-  - git status
-  - git init
+- git status
+- git init
 
 - Basic Git Workflow
   - git add
   - git commit
 
-**2. History of Git**
+### 2. History of Git
 
 - Linus Torvalds
 - Linux
@@ -29,19 +31,23 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - Where the Name Git Came From
 - Who uses Git?
 
-**3. Git vs Github**
+### 3. Git vs Github
 
 - Git
 - Github
 - Why did I write this on a separate file?
-  **4. Terminal Basics**
-  **5. Commits**
+
+### 4. Terminal Basics
+
+### 5. Commits
+
 - git log
 - Review on Basic Git Commands
 - Ammending Commits
 
-**6. Commit Advice**
-**7. Git Branching Overview**
+### 6. Commit Advice
+
+### 7. Git Branching Overview
 
 - Branches Overview
 - What's the Master Branch?
@@ -49,7 +55,9 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - Importance of Branching
 - A Common Workflow: Feature Branching
 - What is HEAD?
-  **8. Branching Commands**
+
+### 8. Branching Commands
+
 - Viewing Branches
 - Creating New Branches
 - Switching Branches
@@ -64,7 +72,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - Renaming a Local Branch
   - Renaming a Remote Branch
 
-**9. Merging**
+### 9. Merging
 
 - Overview
 - How Git Merging Works
@@ -78,11 +86,11 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 - Some Best Practices for Merging
 
-**10. Comparing Changes with Git Diff**
+### 10. Comparing Changes with Git Diff
 
-    - How to Read a `git diff` Output
-      - Basic Struct of `git diff` Output
-      - Sample `git diff` Output
+    - How to Read a git diff Output
+      - Basic Struct of git diff Output
+      - Sample git diff Output
         - Comparing Files
         - File Metadata
         - File Markers
@@ -92,19 +100,19 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
         - New Files
         - Deleted Files
 
-**11. Ways to Use Git Diff**
+### 11. Ways to Use Git Diff
 
-    - How `git diff` Works
-    - Common Uses of `git diff`
+    - How git diff Works
+    - Common Uses of git diff
     - Diff-ing Specific Files
       - File Comparisons
       - Comapring Branches
 
-**12. [in progress] Git Stash Overview**
+### 12. [in progress] Git Stash Overview
 
-### Additional
+## Additional
 
-**- Local Vs Remote**
+### Local Vs Remote
 
 - Local vs Remote Repository
 - Local vs Remote Branch
