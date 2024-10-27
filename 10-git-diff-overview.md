@@ -116,7 +116,8 @@ The `+-` in the context above indicates that the line was modified in both files
 
 In the context above, the line `-Pride and Prejudice` come from File A (indicated by minus sign) but is not in File B . The lines that begin with `+` come from File B but are not in File A. The lines with no signs indicate they exist on both files, also called **context lines**.
 
-**Note:** Usually, Git selects File A to represent the older version of the file and B for the newer version, but **that is not always the case**.
+> [!Note]
+> Usually, Git selects File A to represent the older version of the file and B for the newer version, but **that is not always the case**.
 
 ### Special Cases
 

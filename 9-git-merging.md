@@ -70,7 +70,7 @@ Use a regular `git pull`, which will perform a non-fast-forward merge (will go m
 
 If you prefer to keep your commit history cleaner, rebase your changes on top of the remote branch. This applies your local changes after the latest changes from the remote branch. If there are any conflicts, Git will stop and prompt you to resolve them before continuing.
 
-**Note:** Avoid rebasing branches that have been shared with others or that others might be working on. Merging in these cases will preserve the shared commit history. Similarly, if the branch history is complex, merging will be a safer approach.
+> [!Warning] Avoid rebasing branches that have been shared with others or that others might be working on. Merging in these cases will preserve the shared commit history. Similarly, if the branch history is complex, merging will be a safer approach.
 
 ### Three-Way Merge (or Merge Commit)
 
