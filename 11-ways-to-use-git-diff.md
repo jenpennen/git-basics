@@ -74,4 +74,6 @@ Example:
 ```
 
 You can get the commit hashes using `git log`.
-**Note**: The order of files, branches, or commits in the `git diff` command matters, since it determines the direction of the comparison.
+
+> [!Important]
+> The order of files, branches, or commits in the `git diff` command matters, since it determines the direction of the comparison.
