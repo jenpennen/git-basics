@@ -6,6 +6,9 @@ Welcome. This is a _highly serious_ and _very professional_ project where I lear
 
 This repo exists solely for the purpose of me mastering Git like a pro. Or at least trying to.
 
+> [!Important]
+> This is just a collection of fundamental Git and Github basics that jumpstart my development workflow. If you want the exhaustive list of all Git has to offer, please read their **[documentation](https://git-scm.com/docs)**.
+
 ## Table of Contents
 
 ### [1. Git Intro](1-git-intro.md)

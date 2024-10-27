@@ -217,4 +217,5 @@ Renaming a remote branch involves a few extra steps:
 > push --set-upstream origin <new-branch-name>
 ```
 
-**Remember:** Make sure all changes are committed or stashed to avoid disruption.
+> [!Important]
+> Make sure all changes are committed or stashed to avoid disruption.
