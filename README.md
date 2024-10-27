@@ -23,7 +23,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - git add
   - git commit
 
-### [2. History of Git](https://github.com/jenpennen/git-basics/blob/main/2-history-of-git.md)
+### [2. History of Git](2-history-of-git.md)
 
 - Linus Torvalds
 - Linux
@@ -31,23 +31,23 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - Where the Name Git Came From
 - Who uses Git?
 
-### [3. Git vs Github](https://github.com/jenpennen/git-basics/blob/main/3-git-vs-github.md)
+### [3. Git vs Github](3-git-vs-github.md)
 
 - Git
 - Github
 - Why did I write this on a separate file?
 
-### [4. Terminal Basics](https://github.com/jenpennen/git-basics/blob/main/4-terminal-basics.md)
+### [4. Terminal Basics](4-terminal-basics.md)
 
-### [5. Commits](https://github.com/jenpennen/git-basics/blob/main/5-more-about-commits.md)
+### [5. Commits](5-more-about-commits.md)
 
 - git log
 - Review on Basic Git Commands
 - Ammending Commits
 
-### [6. Commit Advice](https://github.com/jenpennen/git-basics/blob/main/6-commit-advice.md)
+### [6. Commit Advice](6-commit-advice.md)
 
-### [7. Git Branching Overview](https://github.com/jenpennen/git-basics/blob/main/7-git-branching.md)
+### [7. Git Branching Overview](7-git-branching.md)
 
 - Branches Overview
 - What's the Master Branch?
@@ -56,7 +56,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - A Common Workflow: Feature Branching
 - What is HEAD?
 
-### [8. Branching Commands](https://github.com/jenpennen/git-basics/blob/main/8-more-about-branching.md)
+### [8. Branching Commands](8-more-about-branching.md)
 
 - Viewing Branches
 - Creating New Branches
@@ -72,7 +72,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - Renaming a Local Branch
   - Renaming a Remote Branch
 
-### [9. Merging](https://github.com/jenpennen/git-basics/blob/main/9-git-merging.md)
+### [9. Merging](9-git-merging.md)
 
 - Overview
 - How Git Merging Works
@@ -86,7 +86,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 - Some Best Practices for Merging
 
-### [10. Comparing Changes with Git Diff](https://github.com/jenpennen/git-basics/blob/main/10-git-diff-overview.md)
+### [10. Comparing Changes with Git Diff](10-git-diff-overview.md)
 
 - How to Read a git diff Output
   - Basic Struct of git diff Output
@@ -100,7 +100,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - New Files
   - Deleted Files
 
-### [11. Ways to Use Git Diff](https://github.com/jenpennen/git-basics/blob/main/11-ways-to-use-git-diff.md)
+### [11. Ways to Use Git Diff](11-ways-to-use-git-diff.md)
 
 - How git diff Works
 - Common Uses of git diff
@@ -108,11 +108,11 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - File Comparisons
   - Comapring Branches
 
-### [12. [in progress] Git Stash Overview](https://github.com/jenpennen/git-basics/blob/main/12-git-stash.md)
+### [12. [in progress] Git Stash Overview](12-git-stash.md)
 
 ## Additional
 
-### [Local Vs Remote](https://github.com/jenpennen/git-basics/blob/main/additional-local-vs-remote.md)
+### [Local Vs Remote](additional-local-vs-remote.md)
 
 - Local vs Remote Repository
 - Local vs Remote Branch
