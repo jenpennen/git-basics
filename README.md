@@ -8,73 +8,77 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ## Table of Contents
 
-1. Git Intro
+**1. Git Intro**
 
-   - What's a Version Control System?
-   - What is a Git Repo?
-   - Some Git Commands
+- What's a Version Control System?
+- What is a Git Repo?
+- Some Git Commands
 
-     - git status
-     - git init
+  - git status
+  - git init
 
-   - Basic Git Workflow
-     - git add
-     - git commit
+- Basic Git Workflow
+  - git add
+  - git commit
 
-2. History of Git
+**2. History of Git**
 
-   - Linus Torvalds
-   - Linux
-   - Git
-   - Where the Name Git Came From
-   - Who uses Git?
+- Linus Torvalds
+- Linux
+- Git
+- Where the Name Git Came From
+- Who uses Git?
 
-3. Git vs Github
-   - Git
-   - Github
-   - Why did I write this on a separate file?
-4. Terminal Basics
-5. Commits
-   - git log
-   - Review on Basic Git Commands
-   - Ammending Commits
-6. Commit Advice
-7. Git Branching Overview
-   - Branches Overview
-   - What's the Master Branch?
-   - Master vs Main
-   - Importance of Branching
-   - A Common Workflow: Feature Branching
-   - What is HEAD?
-8. Branching Commands
-   - Viewing Branches
-   - Creating New Branches
-   - Switching Branches
-     - How to Switch Branches
-     - Stashing Changes Before Switching
-     - Switching and Creating a New Branch
-     - Using `git checkout` to Switch Branches
-   - Deleting a Branch
-     - Deleting a Local Branch
-     - Deleting a Remote Branch
-   - Renaming Branches
-     - Renaming a Local Branch
-     - Renaming a Remote Branch
-9. Merging
+**3. Git vs Github**
 
-   - Overview
-   - How Git Merging Works
-   - Key Concepts
-   - How to Merge Branches
-   - Types of Merges
+- Git
+- Github
+- Why did I write this on a separate file?
+  **4. Terminal Basics**
+  **5. Commits**
+- git log
+- Review on Basic Git Commands
+- Ammending Commits
 
-     - Fast Forward Merge
-     - Three Way Merge
-     - Merge Conflicts
+**6. Commit Advice**
+**7. Git Branching Overview**
 
-   - Some Best Practices for Merging
+- Branches Overview
+- What's the Master Branch?
+- Master vs Main
+- Importance of Branching
+- A Common Workflow: Feature Branching
+- What is HEAD?
+  **8. Branching Commands**
+- Viewing Branches
+- Creating New Branches
+- Switching Branches
+  - How to Switch Branches
+  - Stashing Changes Before Switching
+  - Switching and Creating a New Branch
+  - Using `git checkout` to Switch Branches
+- Deleting a Branch
+  - Deleting a Local Branch
+  - Deleting a Remote Branch
+- Renaming Branches
+  - Renaming a Local Branch
+  - Renaming a Remote Branch
 
-10. Comparing Changes with Git Diff
+**9. Merging**
+
+- Overview
+- How Git Merging Works
+- Key Concepts
+- How to Merge Branches
+- Types of Merges
+
+  - Fast Forward Merge
+  - Three Way Merge
+  - Merge Conflicts
+
+- Some Best Practices for Merging
+
+**10. Comparing Changes with Git Diff**
 
     - How to Read a `git diff` Output
       - Basic Struct of `git diff` Output
@@ -88,7 +92,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
         - New Files
         - Deleted Files
 
-11. Ways to Use Git Diff
+**11. Ways to Use Git Diff**
 
     - How `git diff` Works
     - Common Uses of `git diff`
@@ -96,11 +100,15 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
       - File Comparisons
       - Comapring Branches
 
-12. [in progress] Git Stash Overview
+**12. [in progress] Git Stash Overview**
 
 ### Additional
 
-- Local Vs Remote
+**- Local Vs Remote**
+
+- Local vs Remote Repository
+- Local vs Remote Branch
+- Local vs Remote Commit
 
 ## How to Contribute
 
