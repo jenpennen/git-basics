@@ -2,7 +2,7 @@
 
 In Git, the terms **local** and **remote** refer to different environments for managing repositories, branches, and commits.
 
-- **Local** environments (repositories, branches, and commits) are **isolated and exist on your personal machine**.
+- **Local** environments are **isolated and exist on your personal machine**.
 
 - **Remote** environments are **hosted on a server and are shared among multiple collaborators/contributors**. It's great for working on projects with other people and also for storing your own work.
 
@@ -12,7 +12,7 @@ Let's go deeper into each one.
 
 ### Local Repository
 
-A **local repository** exists on your personal computer. It contains the complete history of the project, including all branches and commits. You can freely create, modify, and delete branches, make commits, and test changes without affecting anyone else.
+A **local repository** exists on your personal computer. It contains the **complete history of the project, including all branches and commits**. You can freely create, modify, and delete branches, make commits, and test changes without affecting anyone else.
 
 If you're working on a local repository, you will probably using commands like `git add`, `git commit` and `git branch` pretty often.
 
@@ -46,4 +46,4 @@ A **local commit** is a snapshot of your changes saved in your local repository.
 
 A **remote commit** is a commit that exists in the remote repository. It is **the result of pushing one or more local commits to the remote branch**. Remote commits are visible to all collaborators and form part of the shared project history.
 
-That said, you need to `git push` your commits to your remote repository for others to see it.
+That said, you need to `git push` your commits to the remote repository for others to see it.
