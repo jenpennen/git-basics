@@ -25,6 +25,6 @@ Examples:
 This feels more natural since you're committing work that's already been completed.
 
 _BUT_
-Git defaults to the imperative style, which becomes noticeavle in merge commit messages like `Merge pull request`. It indicates what will happen when the commit is applied, reading something like: `"If I apply this commit, it will [make xyz do something]`.
+Git defaults to the imperative style, which becomes noticeable in merge commit messages like `Merge pull request`. It indicates what will happen when the commit is applied, reading something like: `"If I apply this commit, it will [make xyz do something]`.
 
 That said, using the imperative form isn't a requirement. Just keep your commit messages consistent, either with your own style or the standards of the organization or project you're working on.

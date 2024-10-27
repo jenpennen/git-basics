@@ -10,6 +10,22 @@
 
 You can use the command above to get a shorter commit hash and a one line description of the commit you made.
 
+## Review on Basic Commit Commands
+
+After staging, use the `git commit` command to save your changes to the repository. Each commit requires a message to summarize the changes:
+
+```
+> git commit -m "your commit message here"
+```
+
+Alternatively, you can use a single command to add all staged changes and commit them.
+
+```
+> git commit -a -m "your commit message here"
+```
+
+This command stages all modified files and commits them with the specific message in one line.
+
 ## Amending Commits
 
 If you made a commit and then realized you forgot to include a file or made a typo in the commit message, and you want to correct it, you can "redo" the previous commit using the --amend option.
