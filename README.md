@@ -16,8 +16,8 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 - Some Git Commands
 
-- git status
-- git init
+  - git status
+  - git init
 
 - Basic Git Workflow
   - git add
@@ -88,25 +88,25 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 ### 10. Comparing Changes with Git Diff
 
-    - How to Read a git diff Output
-      - Basic Struct of git diff Output
-      - Sample git diff Output
-        - Comparing Files
-        - File Metadata
-        - File Markers
-        - Chunks of Changes
-        - The Actual Changes
-      - Special Cases
-        - New Files
-        - Deleted Files
+- How to Read a git diff Output
+  - Basic Struct of git diff Output
+  - Sample git diff Output
+  - Comparing Files
+  - File Metadata
+  - File Markers
+  - Chunks of Changes
+  - The Actual Changes
+  - Special Cases
+  - New Files
+  - Deleted Files
 
 ### 11. Ways to Use Git Diff
 
-    - How git diff Works
-    - Common Uses of git diff
-    - Diff-ing Specific Files
-      - File Comparisons
-      - Comapring Branches
+- How git diff Works
+- Common Uses of git diff
+- Diff-ing Specific Files
+  - File Comparisons
+  - Comapring Branches
 
 ### 12. [in progress] Git Stash Overview
 
