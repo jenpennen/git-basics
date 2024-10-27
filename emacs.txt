@@ -1,4 +1,4 @@
-Intro to emacs
+# Intro to emacs
 
 Help commands
 *	C-h	help-command: first character in lots of useful help commands
