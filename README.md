@@ -7,11 +7,11 @@ Welcome. This is a _highly serious_ and _very professional_ project where I lear
 This repo exists solely for the purpose of me mastering Git like a pro. Or at least trying to.
 
 > [!Note]
-> This is just a little stash of Git and Github basics to kick my development workflow into gear. If you're craving the full, unabridged Git experience, complete with all the obscure options and features, dive into the **Git [documentation](https://git-scm.com/docs)** - it's a real page-turner!
+> This is just a little stash of Git and Github basics to kick my development workflow into gear. If you're craving the full, unabridged Git experience, complete with all the obscure options and features, dive into the **[<span style="color:#e175a9">Git documentation</span>](https://git-scm.com/docs)** - it's a real page-turner!
 
 ## Table of Contents
 
-### [1. Git Intro](1-git-intro.md)
+### [<span style="color: #e175a9">1. Git Intro</span>](1-git-intro.md)
 
 - What's a Version Control System?
 
@@ -26,7 +26,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - git add
   - git commit
 
-### [2. History of Git](2-history-of-git.md)
+### [<span style="color: #e175a9">2. History of Git</span>](2-history-of-git.md)
 
 - Linus Torvalds
 - Linux
@@ -34,23 +34,23 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - Where the Name Git Came From
 - Who uses Git?
 
-### [3. Git vs Github](3-git-vs-github.md)
+### [<span style="color: #e175a9">3. Git vs Github</span>](3-git-vs-github.md)
 
 - Git
 - Github
 - Why did I write this on a separate file?
 
-### [4. Terminal Basics](4-terminal-basics.md)
+### [<span style="color: #e175a9">4. Terminal Basics</span>](4-terminal-basics.md)
 
-### [5. Commits](5-more-about-commits.md)
+### [<span style="color: #e175a9">5. Commits</span>](5-more-about-commits.md)
 
 - git log
 - Review on Basic Git Commands
 - Ammending Commits
 
-### [6. Commit Advice](6-commit-advice.md)
+### [<span style="color: #e175a9">6. Commit Advice</span>](6-commit-advice.md)
 
-### [7. Git Branching Overview](7-git-branching.md)
+### [<span style="color: #e175a9">7. Branching Overview</span>](7-git-branching.md)
 
 - Branches Overview
 - What's the Master Branch?
@@ -59,7 +59,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 - A Common Workflow: Feature Branching
 - What is HEAD?
 
-### [8. Branching Commands](8-more-about-branching.md)
+### [<span style="color: #e175a9">8. Branching Commands</span>](8-more-about-branching.md)
 
 - Viewing Branches
 - Creating New Branches
@@ -75,7 +75,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - Renaming a Local Branch
   - Renaming a Remote Branch
 
-### [9. Merging](9-git-merging.md)
+### [<span style="color: #e175a9">9. Merging</span>](9-git-merging.md)
 
 - Overview
 - How Git Merging Works
@@ -89,7 +89,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
 
 - Some Best Practices for Merging
 
-### [10. Comparing Changes with Git Diff](10-git-diff-overview.md)
+### [<span style="color: #e175a9">10. Comparing Changes with Git Diff</span>](10-git-diff-overview.md)
 
 - How to Read a git diff Output
   - Basic Struct of git diff Output
@@ -103,7 +103,7 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - New Files
   - Deleted Files
 
-### [11. Ways to Use Git Diff](11-ways-to-use-git-diff.md)
+### [<span style="color: #e175a9">11. Ways to Use Git Diff</span>](11-ways-to-use-git-diff.md)
 
 - How git diff Works
 - Common Uses of git diff
@@ -111,18 +111,18 @@ This repo exists solely for the purpose of me mastering Git like a pro. Or at le
   - File Comparisons
   - Comapring Branches
 
-### [12. [in progress] Git Stash Overview](12-git-stash.md)
+### [<span style="color: #e175a9">12. Git Stash Overview</span>](12-git-stash.md)
 
 - Why Git Stash is Useful
 - Basic Stashing Workflow
 - Additional git stash Options
 - Example Workflow
 
-### [13. [in progress] Undoing Changes in Git](13-undo-changes.md)
+### [<span style="color:#e175a9">13. [in progress] Undoing Changes in Git</span>](13-undo-changes.md)
 
 ## Additional
 
-### [Local Vs Remote](additional-local-vs-remote.md)
+### [<span style="color: #e175a9">Local Vs Remote</span>](additional-local-vs-remote.md)
 
 - Local vs Remote Repository
 - Local vs Remote Branch

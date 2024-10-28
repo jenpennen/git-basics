@@ -1,4 +1,6 @@
-# Places in Los Angeles
+<!-- <link rel="stylesheet" href="styles.css"> -->
+
+# <span style="color:pink">Places in Los Angeles</span>
 
 - Getty Museum
 - LACMA
