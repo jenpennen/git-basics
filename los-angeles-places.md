@@ -1,6 +1,6 @@
 <!-- <link rel="stylesheet" href="styles.css"> -->
 
-# <span style="color:pink">Places in Los Angeles</span>
+# <span style="color:pink">Places in Los Angeles
 
 - Getty Museum
 - LACMA
