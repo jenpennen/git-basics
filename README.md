@@ -13,14 +13,10 @@ If you're craving the full, unabridged Git experience, complete with all the obs
 ### [ 1. Git Intro](1-git-intro.md)
 
 - What's a Version Control System?
-
 - What is a Git Repo?
-
 - Some Git Commands
-
   - git status
   - git init
-
 - Basic Git Workflow
   - git add
   - git commit
@@ -81,11 +77,9 @@ If you're craving the full, unabridged Git experience, complete with all the obs
 - Key Concepts
 - How to Merge Branches
 - Types of Merges
-
   - Fast Forward Merge
   - Three Way Merge
   - Merge Conflicts
-
 - Some Best Practices for Merging
 
 ### [ 10. Comparing Changes with Git Diff ](10-git-diff-overview.md)
@@ -98,7 +92,7 @@ If you're craving the full, unabridged Git experience, complete with all the obs
   - File Markers
   - Chunks of Changes
   - The Actual Changes
-  - Special Cases
+- Special Cases
   - New Files
   - Deleted Files
 
